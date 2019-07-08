@@ -6,12 +6,16 @@ from flask.cli import with_appcontext
 
 @click.group()
 def maintenance():
+    """Enable or disable Maintenance mode."""
     pass
 
 
 @maintenance.command()
 @with_appcontext
 def enable():
+    """
+    Enable Maintenance mode.
+    """
     result = False
     ins_path = current_app.instance_path
 
@@ -38,6 +42,9 @@ def enable():
 @maintenance.command()
 @with_appcontext
 def disable():
+    """
+    Disable Maintenance mode.
+    """
     ins_path = current_app.instance_path
     main_file = os.path.join(ins_path, 'under_maintenance')
 
