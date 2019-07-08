@@ -12,7 +12,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name='Flask-Maintenance',
-    version='0.0.1',
+    version='0.1.0',
     url='https://github.com/akhilharihar/Flask-Maintenance',
     license='MIT',
     author='Akhil Harihar',
@@ -39,6 +39,6 @@ setup(
         "Framework :: Flask",
         "Intended Audience :: Developers",
         "Topic :: Software Development",
-        "Development Status :: 2 - Pre-Alpha"
+        "Development Status :: 4 - Beta"
     ]
 )
